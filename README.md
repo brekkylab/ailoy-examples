@@ -34,9 +34,10 @@
 
 <p align="center"><sub>These show what each example does, not the screen you see when you run it.</sub></p>
 
-Runnable agents built with [Ailoy](https://github.com/brekkylab/ailoy), each in Rust, Python and Node. Every agent works in its own [virtx](https://github.com/brekkylab/virtx) sandbox: the example builds the sandbox's image once, puts its skill and inputs on volumes, and copies the results back when the turn ends.
+Runnable agent examples built with [Ailoy](https://github.com/brekkylab/ailoy), each in Rust, Python and Node. Every agent works in its own [virtx](https://github.com/brekkylab/virtx) sandbox: the example builds the sandbox's image once, puts its skill and inputs on volumes, and copies the results back when the turn ends.
 
-The smallest example, one turn with no tools and no sandbox, is [`hello`](https://github.com/brekkylab/ailoy/tree/main/examples/hello) in the Ailoy repository. [ailoy.co/examples](https://ailoy.co/examples/) shows these running.
+These are advanced examples, and tutorials are in the Ailoy repository.
+[ailoy.co/use-cases](https://ailoy.co/use-cases/) shows these running.
 
 | Example | What the agent does | <img src="https://cdn.simpleicons.org/rust/000000/ffffff" width="14"/> Rust | <img src="https://cdn.simpleicons.org/python" width="14"/> Python | <img src="https://cdn.simpleicons.org/nodedotjs" width="14"/> Node |
 | --- | --- | --- | --- | --- |
