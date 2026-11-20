@@ -1,0 +1,17 @@
+{
+  "name": "ailoy-example-tts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Qwen3-TTS on ncnn as an agent's skill, on ailoy's Node bindings.",
+  "type": "module",
+  "scripts": {
+    "start": "node main.mjs"
+  },
+  "dependencies": {
+    "@brekkylab/ailoy": "file:../../../ailoy/bindings/node",
+    "@brekkylab/virtx": "^0.2.0"
+  },
+  "engines": {
+    "node": ">= 22"
+  }
+}

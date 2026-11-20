@@ -1,0 +1,17 @@
+{
+  "name": "ailoy-example-offshore-leaks",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ICIJ's Offshore Leaks database analyzed by an agent, on ailoy's Node bindings.",
+  "type": "module",
+  "scripts": {
+    "start": "node main.mjs"
+  },
+  "dependencies": {
+    "@brekkylab/ailoy": "file:../../../ailoy/bindings/node",
+    "@brekkylab/virtx": "^0.2.0"
+  },
+  "engines": {
+    "node": ">= 22"
+  }
+}

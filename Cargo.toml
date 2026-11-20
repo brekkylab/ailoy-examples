@@ -1,0 +1,57 @@
+[package]
+name = "ailoy-examples"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.95.0"
+license = "Apache-2.0"
+publish = false
+description = "Runnable examples of Ailoy agents, each in Rust, Python and Node."
+
+# Each example is `cargo run --example <name>` from here. They find their `shared/` folder
+# from `CARGO_MANIFEST_DIR`, which is this folder.
+[[example]]
+name = "browser-use"
+path = "browser-use/rust/main.rs"
+
+[[example]]
+name = "cad"
+path = "cad/rust/main.rs"
+
+[[example]]
+name = "gameplay"
+path = "gameplay/rust/main.rs"
+
+[[example]]
+name = "laya"
+path = "laya/rust/main.rs"
+
+[[example]]
+name = "offshore_leaks"
+path = "offshore_leaks/rust/main.rs"
+
+[[example]]
+name = "retail_bench"
+path = "retail_bench/rust/main.rs"
+
+[[example]]
+name = "sam3"
+path = "sam3/rust/main.rs"
+
+[[example]]
+name = "tts"
+path = "tts/rust/main.rs"
+
+[dev-dependencies]
+ailoy = "0.3.2"
+virtx = "0.2.0"
+anyhow = "1"
+dotenvy = "0.15"
+futures = "0.3"
+reqwest = { version = "0.13", features = ["json"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "process", "rt-multi-thread"] }
+
+# Until the next ailoy release: ailoy from the checkout beside this repository, since the examples
+# use API that 0.3.2 does not have. `scripts/pin_ailoy.py` swaps this for a release.
+[patch.crates-io]
+ailoy = { path = "../ailoy" }
