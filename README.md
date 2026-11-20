@@ -1,10 +1,42 @@
-# Ailoy examples
+<p align="center">
+  <a href="https://github.com/brekkylab/ailoy">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brekkylab/ailoy/main/docs/public/img/ailoy-logo-signature-white.svg">
+      <img alt="Ailoy" src="https://raw.githubusercontent.com/brekkylab/ailoy/main/docs/public/img/ailoy-logo-signature-black.svg" width="264" style="max-width: 40%;">
+    </picture>
+  </a>
+</p>
+
+<h3 align="center">Examples</h3>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/rust/000000/ffffff" width="16"/> Rust&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python" width="16"/> Python&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/nodedotjs" width="16"/> Node.js
+</p>
+
+<p align="center">
+  <a href="https://ailoy.co/docs/"><img src="https://img.shields.io/badge/docs-eng-5a9cae" alt="Documentation"></a>
+  <a href="https://discord.gg/27rx3EJy3P"><img src="https://img.shields.io/badge/Discord-7289DA?logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://x.com/brekkylab"><img src="https://img.shields.io/badge/X-000000?logo=x&logoColor=white" alt="X"></a>
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center"><a href="./cad"><img src="https://raw.githubusercontent.com/brekkylab/ailoy/main/docs/images/ailoy-cad.gif" alt="cad"></a><br><sub>cad</sub></td>
+    <td align="center"><a href="./sam3"><img src="https://raw.githubusercontent.com/brekkylab/ailoy/main/docs/images/ailoy-sam3-video.gif" alt="sam3"></a><br><sub>sam3</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="./gameplay"><img src="https://raw.githubusercontent.com/brekkylab/ailoy/main/docs/images/ailoy-openttd.gif" alt="gameplay"></a><br><sub>gameplay</sub></td>
+    <td align="center"><a href="./laya"><img src="https://raw.githubusercontent.com/brekkylab/ailoy/main/docs/images/ailoy-laya.gif" alt="laya"></a><br><sub>laya</sub></td>
+  </tr>
+</table>
 
 Runnable agents built with [Ailoy](https://github.com/brekkylab/ailoy), each in Rust, Python and Node. Every agent works in its own [virtx](https://github.com/brekkylab/virtx) sandbox: the example builds the sandbox's image once, puts its skill and inputs on volumes, and copies the results back when the turn ends.
 
 The smallest example, one turn with no tools and no sandbox, is [`hello`](https://github.com/brekkylab/ailoy/tree/main/examples/hello) in the Ailoy repository. [ailoy.co/examples](https://ailoy.co/examples/) shows these running.
 
-| Example | What the agent does | Rust | Python | Node |
+| Example | What the agent does | <img src="https://cdn.simpleicons.org/rust/000000/ffffff" width="14"/> Rust | <img src="https://cdn.simpleicons.org/python" width="14"/> Python | <img src="https://cdn.simpleicons.org/nodedotjs" width="14"/> Node |
 | --- | --- | --- | --- | --- |
 | [cad](./cad) | Writes CadQuery, renders the model from four sides, looks at the renders and iterates | [rust](./cad/rust) | [python](./cad/python) | [node](./cad/node) |
 | [offshore_leaks](./offshore_leaks) | Analyses the ICIJ Offshore Leaks database with SQL and Python that the agent writes itself | [rust](./offshore_leaks/rust) | [python](./offshore_leaks/python) | [node](./offshore_leaks/node) |
