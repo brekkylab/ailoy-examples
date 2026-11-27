@@ -28,7 +28,7 @@
 // * `AILOY_MODEL` — the agent's model, `anthropic/claude-sonnet-5-5` by default; its org's backend
 //   has to be set up as https://ailoy.co/docs/guides/model-providers/ says.
 //
-// `npm install` here first, after building the addon (`npm run build` in `../ailoy/bindings/node`, until the next ailoy release).
+// `npm install` here first.
 
 import { spawn } from 'node:child_process'
 import { once } from 'node:events'

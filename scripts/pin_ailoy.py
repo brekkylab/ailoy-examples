@@ -1,4 +1,4 @@
-"""Point every example at a published ailoy release instead of the checkout beside this repository.
+"""Point every example at a published ailoy release.
 
     python3 scripts/pin_ailoy.py 0.3.3
 

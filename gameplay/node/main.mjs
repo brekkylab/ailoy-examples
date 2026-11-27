@@ -32,7 +32,7 @@
 // * `OPENTTD_SIZE` — the viewer's display, `1280x720` by default.
 // * `OPENTTD_VNC_PASSWORD` — the viewer's password, `openttd` by default.
 //
-// `npm install` here first, after building the addon (`npm run build` in `../ailoy/bindings/node`, until the next ailoy release).
+// `npm install` here first.
 
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'

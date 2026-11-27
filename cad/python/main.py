@@ -10,8 +10,7 @@ form. The skill is `SKILL.md` and `render.py`, the ones the three sides share in
 mounted at `/skills/cad`: the agent writes the model script,
 `render.py` checks it and draws it from four sides, and the agent reads the pictures with its
 `imgread` tool. There is no model to download and no GPU needed. What a run uses is in this
-folder, which is a uv project of its own (`pyproject.toml`) that `uv run` sets up with ailoy
-from the ailoy checkout beside this repository; run it from here.
+folder, which is a uv project of its own (`pyproject.toml`) that `uv run` sets up; run it from here.
 
 * The volume `ailoy-cad-context` at `/context`, read-only — `context/` here, put there each
   run: what the request is about, when it is not in the prompt: a sketch, a photo of the

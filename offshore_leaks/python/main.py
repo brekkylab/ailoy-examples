@@ -10,7 +10,7 @@ The Python side of the Rust `offshore_leaks` example in `offshore_leaks/rust`, w
 `oldb.py`, which go each run onto the volume `ailoy-offshore-leaks-skill` of the virtx server,
 mounted at `/skills/offshore-leaks`. These three are the ones the three sides share in
 `offshore_leaks/shared`. What a run uses is in this folder, which is a uv project of
-its own (`pyproject.toml`) that `uv run` sets up with ailoy from the ailoy checkout beside this repository; run it from
+its own (`pyproject.toml`) that `uv run` sets up; run it from
 here.
 
 * The volume `ailoy-offshore-leaks-context` at `/context`, read-only — `context/` here, every

@@ -6,7 +6,7 @@ Runnable Ailoy agents, one folder per example. Read this before changing anythin
 - The Rust example is registered in the root `Cargo.toml` as `[[example]]` and finds its folder from `CARGO_MANIFEST_DIR`, the top of this repository. Each `python/` is a uv project and each `node/` an npm project of its own.
 - A new example gets a row in the table in `README.md`.
 - Examples are self-contained: a reader runs one with the command in its `README.md` and nothing else set up beyond a model.
-- Until the next Ailoy release the examples take Ailoy from `../ailoy` (Cargo `[patch.crates-io]`, uv `path` sources, npm `file:`); `scripts/pin_ailoy.py <version>` points them at a release.
+- The examples take Ailoy and virtx from their releases: the root `Cargo.toml`, each `pyproject.toml` and each `package.json` name the versions. `scripts/pin_ailoy.py <version>` moves every example to another Ailoy release; refresh the lockfiles after it.
 
 ## Before pushing
 

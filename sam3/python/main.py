@@ -8,8 +8,7 @@ long form. The skill is `SKILL.md` and `run_sam3.py`, which the agent runs with 
 tool, put each run onto the volume `ailoy-sam3-skill` of the virtx server mounted at
 `/skills/sam3`. They and `prepare_model.py`, which downloads and converts the model into `data/`
 on the first run, are the ones the three sides share in `sam3/shared`. What a run uses
-is in this folder, which is a uv project of its own (`pyproject.toml`) that `uv run` sets up
-with ailoy from the ailoy checkout beside this repository; run it from here.
+is in this folder, which is a uv project of its own (`pyproject.toml`) that `uv run` sets up; run it from here.
 
 * The volume `ailoy-sam3-models` at `/models`, read-only — `data/ncnn/` here, the converted
   models, put there each run.

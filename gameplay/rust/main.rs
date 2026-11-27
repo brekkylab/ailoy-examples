@@ -179,7 +179,7 @@ async fn main() -> anyhow::Result<()> {
             readonly: false,
         },
     ];
-    args.ports = vec![VNC_PORT];
+    args.ports = vec![VNC_PORT.into()];
     args.abins = vec!["display".to_string()];
     args.vcpus = Some(2);
     args.memory_mib = Some(2048);
@@ -208,9 +208,10 @@ async fn main() -> anyhow::Result<()> {
             SandboxJobEntry::Stdout(line) | SandboxJobEntry::Stderr(line) => println!("{line}"),
             SandboxJobEntry::End(end) => bail!("OpenTTD did not start (exit {})", end.code),
             SandboxJobEntry::Truncated {} => {}
+            _ => {}
         }
     }
-    let viewer = PortForwarder::open(&client, &sandbox.info().ports[0].url)?;
+    let viewer = PortForwarder::open(&client, &sandbox.info().ports[0])?;
     println!(
         "OpenTTD is running. Watch it at vnc://{} (password: {password}).",
         viewer.address()
