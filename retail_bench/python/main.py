@@ -10,7 +10,7 @@ The Python side of the Rust `retail_bench` example in `retail_bench/rust`, whose
 which is RetailBench's own simulator run as a local REST server by `simulator/sim`, upstream
 code and dataset cache included, are the ones the three sides share in
 `retail_bench/shared`. What a run writes is in this folder, which is a uv project of
-its own (`pyproject.toml`) that `uv run` sets up with ailoy from the ailoy checkout beside this repository; run it from
+its own (`pyproject.toml`) that `uv run` sets up; run it from
 here.
 
 Every morning the store writes what the agent may read into `runs/<slug>/context/`, and the

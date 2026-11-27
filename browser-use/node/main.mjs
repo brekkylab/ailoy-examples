@@ -17,7 +17,7 @@
 // to be set up as https://ailoy.co/docs/guides/model-providers/ says, any key in the
 // environment or in `.env`.
 //
-// `npm install` here first, after building the addon (`npm run build` in `../ailoy/bindings/node`, until the next ailoy release).
+// `npm install` here first.
 
 import { existsSync } from 'node:fs'
 import { dirname, join } from 'node:path'

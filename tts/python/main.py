@@ -10,7 +10,7 @@ folder, speaks the text in that voice and hands back the WAV. The skill is `SKIL
 `/skills/tts`. They, `prepare_model.py`, which downloads and converts the models into `data/`
 on the first run, and `context_example/` are the ones the three sides share in
 `tts/shared`. What a run uses is in this folder, which is a uv project of its own
-(`pyproject.toml`) that `uv run` sets up with ailoy from the ailoy checkout beside this repository; run it from here.
+(`pyproject.toml`) that `uv run` sets up; run it from here.
 
 * The volume `ailoy-tts-models` at `/models`, read-only — `data/ncnn/`, put there each run.
 * The volume `ailoy-tts-context` at `/context`, read-only — `context/`, the text and the

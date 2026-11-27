@@ -54,14 +54,13 @@ These are advanced examples, and tutorials are in the Ailoy repository.
 
 ## Before you run one
 
-**Ailoy, beside this repository.** Until the next Ailoy release, the examples use Ailoy from a checkout next to this one, since they use API that Ailoy 0.3.2 does not have:
+**This repository.** Each example takes Ailoy 0.3.3 and virtx 0.2.1 from crates.io, PyPI and npm, so cloning this repository is all the setup:
 
 ```sh
-git clone https://github.com/brekkylab/ailoy
 git clone https://github.com/brekkylab/ailoy-examples
 ```
 
-Rust and Python build it on the first run. Node needs the addon built once: `cd ailoy/bindings/node && npm install && npm run build`. Once the release is out, `python3 scripts/pin_ailoy.py <version>` points every example at it and the checkout is no longer needed.
+Python needs 3.11 or later and [uv](https://docs.astral.sh/uv/), Node.js 22 or later.
 
 **A model.** Claude, GPT and Gemini run through their CLIs by default, so an example needs no key if the CLI for its model is installed and logged in. `AILOY_MODEL` picks another model; [Model providers](https://ailoy.co/docs/guides/model-providers/) says how to set one up, with keys in the environment or a `.env` file here.
 

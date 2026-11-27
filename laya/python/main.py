@@ -10,7 +10,7 @@ long form. The skill is `SKILL.md` and `run_laya.py`, put each run onto the volu
 `shell` tool. They and `prepare_model.py`, which downloads and converts the model into `data/` on
 the first run, are the ones the three sides share in `laya/shared`. `data/ncnn/` goes
 each run onto the volume `ailoy-laya-models` at `/models`, read-only. What a run uses is in this folder, which is a uv project of its own
-(`pyproject.toml`) that `uv run` sets up with ailoy from the ailoy checkout beside this repository; run it from here.
+(`pyproject.toml`) that `uv run` sets up; run it from here.
 
 Without a prompt the agent routes a support inbox: it asks Laya which department each ticket in
 `shared/tickets/` belongs to and files a copy in that department's folder.

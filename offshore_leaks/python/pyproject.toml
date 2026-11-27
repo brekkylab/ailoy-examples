@@ -4,8 +4,8 @@ version = "0.1.0"
 description = "ICIJ's Offshore Leaks database analyzed by an agent, on ailoy's Python bindings, and the script that loads it into DuckDB."
 requires-python = ">=3.11"
 dependencies = [
-    "ailoy-py",
-    "virtx>=0.2.0,<0.3",
+    "ailoy-py>=0.3.3,<0.4",
+    "virtx>=0.2.1,<0.3",
     # Pinned: the guest opens the file this writes and must install the same version.
     "duckdb==1.5.5",
     "python-dotenv>=1",
@@ -14,8 +14,3 @@ dependencies = [
 [tool.uv]
 # Scripts, not a package: `uv run` only needs the environment.
 package = false
-
-[tool.uv.sources]
-# Until the next ailoy release: the bindings in the ailoy checkout beside this repository,
-# built by maturin on the first `uv run`. `scripts/pin_ailoy.py` swaps this for a release.
-ailoy-py = { path = "../../../ailoy/bindings/python", editable = true }

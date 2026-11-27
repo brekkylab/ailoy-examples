@@ -9,7 +9,7 @@ in it from the same sandbox, through the skill's `ttd.py`. `gameplay/shared`, th
 skill (`SKILL.md`, `ttd.py`, `admin.py`) and the game's side (`server/`: `start.sh`, the Game
 Script and the AI) that the three sides share, goes each run onto a volume of the virtx server
 mounted at `/skills/openttd`. This folder is a uv project of its own
-(`pyproject.toml`) that `uv run` sets up with ailoy from the ailoy checkout beside this repository; run it from here.
+(`pyproject.toml`) that `uv run` sets up; run it from here.
 
 * The volume `ailoy-gameplay-artifacts` at `/artifacts`, writable — the agent's notes, the
   screenshots it took, the saved games in `user/openttd/save/` (the last as

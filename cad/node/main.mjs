@@ -25,7 +25,7 @@
 //   set up as https://ailoy.co/docs/guides/model-providers/ says. It has to take images,
 //   or it cannot see what it built.
 //
-// `npm install` here first, after building the addon (`npm run build` in `../ailoy/bindings/node`, until the next ailoy release).
+// `npm install` here first.
 
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'

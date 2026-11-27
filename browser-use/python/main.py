@@ -18,8 +18,7 @@ Environment:
   to be set up as https://ailoy.co/docs/guides/model-providers/ says, any key in the
   environment or in `.env`.
 
-This folder is a uv project of its own (`pyproject.toml`), which `uv run` sets up with ailoy
-from the ailoy checkout beside this repository; run it from here.
+This folder is a uv project of its own (`pyproject.toml`), which `uv run` sets up; run it from here.
 """
 
 import asyncio
